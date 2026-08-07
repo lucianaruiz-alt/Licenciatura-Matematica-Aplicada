@@ -16,7 +16,7 @@ El trabajo analiza el comportamiento dinámico de las iteraciones del método al
 ## 🔬 Metodología e Implementación Numérica
 
 1. **Generalización de Newton a varias variables:**
-   - Formulaci\u00f3n en $\mathbb{R}^2$: $J(x_k, y_k) \cdot \Delta X_k = -F(x_k, y_k)$, donde $J$ representa la matriz Jacobiana.
+   - Formulación en $\mathbb{R}^2$: $J(x_k, y_k) \cdot \Delta X_k = -F(x_k, y_k)$, donde $J$ representa la matriz Jacobiana.
    - Reescritura de funciones complejas $f(z) = u(x,y) + i\,v(x,y)$ como sistemas de dos ecuaciones con dos incógnitas mediante la equivalencia topológica entre $\mathbb{C}$ y $\mathbb{R}^2$.
 
 2. **Resolución del Problema de Cayley:**
