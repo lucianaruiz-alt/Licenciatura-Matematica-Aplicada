@@ -18,14 +18,6 @@ Las versiones modificadas de Tian ajustan explícitamente los tres primeros mome
 
 ---
 
-## 📊 Conclusiones Principales
-
-1. **Aceleración de Convergencia:** El ajuste de los tres momentos reduce sensiblemente las oscilaciones y el error relativo en función de $N$ respecto a la solución continua de Black-Scholes.
-2. **Eficiencia Trinomial:** Aunque cada paso requiere mayor cómputo, los métodos trinomiales (especialmente **TRIN2**) ofrecen la mejor relación costo-beneficio computacional, alcanzando la exactitud deseada con muchos menos pasos que los binomiales.
-3. **Opciones Americanas:** El modelo **BIN** ofrece mayor estabilidad que CRR para la opción *Put* americana en valores moderados de $N$, mientras que los esquemas trinomiales muestran la menor variabilidad temporal.
-
----
-
 ## 🛠️ Tecnologías Utilizadas
 
 - **Lenguaje:** Python 3 (`numpy`, `scipy`, `matplotlib`)
