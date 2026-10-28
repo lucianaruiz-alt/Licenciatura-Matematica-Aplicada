@@ -1,5 +1,6 @@
 Trabajo de laboratorio integrador 1
 Modelado de sistemas – Caracteristicas y medidas de desempeño
+
 clearvars;  % Borra las variables de la memoria
 close all;  % Cierra todas las ventanas de gráficos
 clc;        % Limpia la pantalla de comandos
@@ -11,7 +12,11 @@ R2 = 47e3; C2 = 0.1e-6;
 R9 = 1e3; R7 = 10e3;    
 
 s = tf('s');
+
+
+
 1a. Función de trasferencia de los bloques
+
 % Sys1
 Sys1 = 1 / (R1 * C1 * s + 1)
 % Sys2
@@ -19,6 +24,9 @@ k = 1 + (R7 / R9);
 Sys2 = k / (R2 * C2 * s + 1)
 Función de transferencia en lazo abierto G(s)
 Gp = series(Sys1, Sys2) 
+
+
+
 1b. Función de transferencia del sistema realimentado 
 %Sysf(s)
 Sysf = feedback(Gp, 1)
@@ -28,6 +36,9 @@ Sysf_zpk = zpk(Sysf)
 
 wn = wn_vec(1)     % Frecuencia angular [rad/s]
 xi = zeta_vec(1)   % Factor de amortiguamiento (ξ)
+
+
+
 2. Respuesta al escalón 
 figure
 step(Sysf)
@@ -74,6 +85,11 @@ PO = info.Overshoot
 Tp = info.PeakTime
 Ts = info.SettlingTime
 tr = info.RiseTime
+
+
+
+
+
 3. Error estacionario 
 Escalon unitario 
 [y_step, t_step] = step(Sysf);
@@ -115,6 +131,13 @@ title('Respuesta a la Rampa Unitaria');
 xlabel('Tiempo [s]'); 
 ylabel('Tensión [V]');
 legend('Entrada r(t)', 'Salida y(t)', 'Location', 'southeast');
+
+
+
+
+
+
+
 4. Valores comerciales
 Dado que :   
 Para : (circuito abierto/no conectada).   
