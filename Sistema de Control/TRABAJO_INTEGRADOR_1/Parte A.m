@@ -5,6 +5,7 @@ close all;  % Cierra todas las ventanas de gráficos
 clc;        % Limpia la pantalla de comandos
 
 %Parámetros del circuito
+
 C1 = 0.1e-6; R1 = 100e3;    
 R2 = 47e3; C2 = 0.1e-6;  
 R9 = 1e3; R7 = 10e3;    
