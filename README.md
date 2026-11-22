@@ -1,2 +1,2 @@
-# Licenciatura-Matematica-Aplicada
+# Licenciatura Matematica Aplicada
 Proyectos y materias de la carrera en FAMAF, UNC.
